@@ -12,10 +12,11 @@ public class LoggingAspects {
      * It will make some action before Method(signature)
      */
     @org.aspectj.lang.annotation.
-            Before("execution(public void org.aop.Library.getBook())")
+            Before("execution(public void get*())")
     public void beforeGetBookAdvice(){
         System.out.println("Some Advice Before Method getBook" +
                 "from any Classes with samy method signature");
     }
+
 
 }
