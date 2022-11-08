@@ -1,13 +1,10 @@
-package org.annotation;
+package org.ioc_di.javacode;
 
-
-import org.springframework.context.annotation.Scope;
-import org.springframework.stereotype.Component;
 
 /**
  * Class with common Interface
  */
-@Component("dogBean")
+//@Component("dogBean")
 
 public class Dog implements Pet {
 

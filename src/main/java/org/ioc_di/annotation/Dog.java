@@ -1,4 +1,4 @@
-package org.javacode;
+package org.ioc_di.annotation;
 
 
 import org.springframework.stereotype.Component;
@@ -6,7 +6,7 @@ import org.springframework.stereotype.Component;
 /**
  * Class with common Interface
  */
-//@Component("dogBean")
+@Component("dogBean")
 
 public class Dog implements Pet {
 
