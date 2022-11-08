@@ -11,8 +11,7 @@ public class LoggingAspects {
      * Put signature Into @Before Parameters
      * It will make some action before Method(signature)
      * <p>
-     * PointCut = * = for any method starts with get
-     * PointCut = * = for any return type
+     * Necessarily part of pointCut = return type/name/parameters
      */
     @org.aspectj.lang.annotation.
             Before("execution(public * get*())")
