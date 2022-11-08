@@ -11,7 +11,9 @@ public class Test1 {
 
         // Use reflection to set to link Bean
         Library library = context.getBean("libraryBean", Library.class);
+        SecondLibrary sl = context.getBean("secondLibrary", SecondLibrary.class);
         library.getBook();
+        sl.getBook();
 
         context.close();
     }
