@@ -10,10 +10,12 @@ public class LoggingAspects {
     /**
      * Put signature Into @Before Parameters
      * It will make some action before Method(signature)
+     * <p>
+     * PointCut = * = for any method starts with get
      */
     @org.aspectj.lang.annotation.
             Before("execution(public void get*())")
-    public void beforeGetBookAdvice(){
+    public void beforeGetBookAdvice() {
         System.out.println("Some Advice Before Method getBook" +
                 "from any Classes with samy method signature");
     }
